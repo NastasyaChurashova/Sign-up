@@ -4,15 +4,24 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
   }
-  header a {
-    text-decoration: none;
-    color: white;
-    margin-right: 24px;
-  }
+
+header a {
+  text-decoration: none;
+  color: white;
+  margin-right: 24px;
+}
   
-  header {
-    width: 1000px;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-  }
+header {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.sign-form {
+  width:365px;
+  min-height: 470px;
+  background: #fff;
+  margin: 99px auto 0 auto;
+  border-radius: 3px;
+}
