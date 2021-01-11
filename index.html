@@ -70,19 +70,25 @@
                 type="text"
                 placeholder="First Name..."
                 value=""
+                oninput="this.setAttribute('value', this.value)"
             />
+
             <input
                 class="email"
                 type="text"
                 placeholder="Email..."
                 value=""
+                oninput="this.setAttribute('value', this.value)"
             />
+
             <input
                 class="password"
                 type="text"
                 placeholder="Password..."
                 value=""
-            />           
+                oninput="this.setAttribute('value', this.value)"
+            />
+                        
         </div>
      </main>
     </body>

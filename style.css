@@ -63,11 +63,31 @@ h2 {
   margin: 36px 19px;
 }
 
-.name, 
-.email,
-.password {
+input {
   display: block;
-  width: 308px;
-  height: 32px;
-  margin: 30px auto; 
+  width: 265px;
+  height: 31px;
+  margin: 30px 31px 47px 26px;
+  background-image: url(icon-face.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  padding-left: 39px;
+  outline-style: #631186;
+  color: #D2D2D2;
 }
+
+input, textarea {
+  border-style: none;
+  border-bottom-style: solid;
+  border-color: linear-gradient(to right, #ffff 0%, #D2D2D2 100%);
+  }
+
+.email {
+  background-image: url(icon-email.png);
+}
+
+.password {
+  background-image: url(icon-password.png);
+}
+
+
