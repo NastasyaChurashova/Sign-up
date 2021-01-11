@@ -79,8 +79,8 @@ input {
 input, textarea {
   border-style: none;
   border-bottom-style: solid;
-  border-color: linear-gradient(to right, #ffff 0%, #D2D2D2 100%);
-  }
+  border-color: #D2D2D2;
+}
 
 .email {
   background-image: url(icon-email.png);
@@ -90,4 +90,18 @@ input, textarea {
   background-image: url(icon-password.png);
 }
 
-
+.button {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  height: 17px;
+  color: #9C27B0;
+  margin: -15px auto;
+  background-image: none;
+  border-style: none;
+  text-align: center;
+  padding-left:0;
+  background-color: #fff;
+  letter-spacing: 0;
+  font-weight:400;
+}
