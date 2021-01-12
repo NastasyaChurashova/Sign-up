@@ -1,9 +1,9 @@
 body {
     background: url(Background.png);
-    background-size: contain;
     background-repeat: no-repeat;
     min-height: 100vh;
     font-family: "Roboto";
+    font-size: 12px;
   }
 
 header a {
@@ -13,16 +13,21 @@ header a {
   margin-top: 40px;
 }
 
-.top-menu {
-  display: block;
+ nav .top-menu ~svg {
+  display: inline-block;
+  vertical-align: middle;
   margin-top: 40px;
-  font-size: 12px;
 }
   
+.Tim {
+    font-size: 18px;
+}
+
 header {
   width: 1000px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: auto;
 }
 
@@ -79,19 +84,20 @@ input {
   background-repeat: no-repeat;
   background-position: 0 50%;
   padding-left: 39px;
-  outline-style: #631186;
+  outline-color: none;
   color: #999999;
-}
-
-input, textarea {
   border-style: none;
-  border-bottom: solid #D2D2D2;
-}
+  border-bottom: 2px solid #D2D2D2;
+  position: relative;
+  }
 
 input::placeholder{
   color: #999999;
 }
 
+input:active {
+  outline-color: #631186;
+}
 
 .email {
   background-image: url(icon-email.png);
@@ -115,5 +121,4 @@ input::placeholder{
   background-color: #fff;
   letter-spacing: 0;
   font-size: 14px;
-  font-weight:400;
 }
