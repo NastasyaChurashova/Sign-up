@@ -23,7 +23,7 @@ header a {
   margin-top: 40px;
 }
 
- nav .top-menu {
+.top-menu {
   display: inline-block;
   vertical-align: middle;
   margin-top: 40px;
@@ -36,6 +36,11 @@ main {
   
 .Tim {
     font-size: 18px;
+}
+
+#download {
+  vertical-align: middle;
+  padding-bottom: 2px;
 }
 
 header {
@@ -153,12 +158,10 @@ input:active {
 }
 
 footer {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items:center;
   max-width: 1139px;
   padding: 23px 24px;
-  display: flex;
-  justify-content: space-between;
   margin: 66px auto;
 }
 
@@ -175,6 +178,7 @@ h3 {
   font-size: 14px;
   font-weight: 400;
   margin-right: 50px;
+  margin-left: 534px;
 }
 
 .dropdown {
