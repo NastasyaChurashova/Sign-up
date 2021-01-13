@@ -1,10 +1,17 @@
 body {
     background: url(Background.png);
+    background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
+    margin: 0;
     font-family: "Roboto";
     font-size: 12px;
   }
+
+form {
+    padding: 0 4px;
+  }
+
 
 header a {
   text-decoration: none;
@@ -18,25 +25,30 @@ header a {
   vertical-align: middle;
   margin-top: 40px;
 }
+
+main {
+  display: flex;
+  justify-content: center;
+}
   
 .Tim {
     font-size: 18px;
 }
 
 header {
-  width: 1000px;
+  max-width: 1139px;
+  padding: 23px 24px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: auto;
 }
 
 .sign-form {
-  width: 365px;
-  height: 470px;
+  min-height: 470px;
   background: #fff;
-  margin: 99px auto 0 auto;
+  margin-top: 99px;
   border-radius: 3px;
+  padding: 0 20.5px;
 }
 
 h2 {
@@ -48,15 +60,15 @@ h2 {
 }
 
 .social-icons {
-  width: 324px;
-  height: 150px;
+  height: 84px;
   background: linear-gradient(90deg, #bc478f 0%, #7b1fa2 100%);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5), 0px 4px 25px rgba(0, 0, 0, 0.12);
   border-radius: 3px;
   margin: auto;
   position: relative;
   top: -39px;
-  text-align:center;
+  text-align: center;
+  padding: 33px 37px;
 }
 
 .social-icons h1 {
@@ -66,30 +78,33 @@ h2 {
   font-size: 20px;
   font-weight: 500;
   line-height: 23.44px;
-  margin: 33px;
-  padding-top: 39px;
+  margin: 0 0 36px 0;
+
 }
 
 .social-icons a {
   text-decoration: none;
-  margin: 36px 19px;
+  margin: 0 19px;
 }
 
 input {
-  display: block;
-  width: 265px;
-  height: 31px;
-  margin: 30px 31px 47px 26px;
-  background-image: url(icon-face.png);
-  background-repeat: no-repeat;
-  background-position: 0 50%;
-  padding-left: 39px;
   outline-color: none;
-  color: #999999;
   border-style: none;
-  border-bottom: 2px solid #D2D2D2;
-  position: relative;
+}
+
+.name,
+.email,
+.password {
+  display: flex;
   }
+
+input {
+  width: 269px;
+  border: 0;
+  margin: 15px 4px 35px 15px;
+  color: #999999;
+  border-bottom: 2px solid #D2D2D2;
+}
 
 input::placeholder{
   color: #999999;
@@ -99,12 +114,22 @@ input:active {
   outline-color: #631186;
 }
 
-.email {
-  background-image: url(icon-email.png);
+.name input:focus {
+  outline: none;
+  border-bottom-color: #7b1fa2;
+  transition: border-bottom-color 2s;
 }
 
-.password {
-  background-image: url(icon-password.png);
+.name::before {
+  content: url("icon-face.png");
+}
+
+.email::before {
+  content: url(icon-email.png);
+}
+
+.password::before {
+  content: url(icon-password.png);
 }
 
 .button {
@@ -113,7 +138,7 @@ input:active {
   width: 120px;
   height: 17px;
   color: #9C27B0;
-  margin: -15px auto;
+  margin: 5px auto 5px;
   background-image: none;
   border-style: none;
   text-align: center;
@@ -122,3 +147,40 @@ input:active {
   letter-spacing: 0;
   font-size: 14px;
 }
+
+footer {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 1139px;
+  padding: 23px 24px;
+  display: flex;
+  justify-content: space-between;
+  margin: 66px auto;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 12px;
+  color: white;
+  margin-right: 24px;
+  margin-top: 40px;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 50px;
+}
+
+@media only screen and (max-width: 786px) {
+  header {
+    background: rgba(0, 0, 0, 0.4);
+  }
+  h3 {
+    margin: 0px auto;
+  }
+}
+
+
