@@ -13,7 +13,7 @@ form {
   }
 
 .wrapper {
-  display:grid;
+  display: grid;
 }
 
 header a {
@@ -111,7 +111,7 @@ input {
   width: 269px;
   border: 0;
   margin: 15px 4px 35px 15px;
-  color: #999999;
+  color: #000000;
   border-bottom: 2px solid #D2D2D2;
 }
 
@@ -131,14 +131,17 @@ input:active {
 
 .name::before {
   content: url("icon-face.png");
-}
+  padding-top: 10px;
+ }
 
 .email::before {
   content: url(icon-email.png);
+  padding-top: 10px;
 }
 
 .password::before {
   content: url(icon-password.png);
+  padding-top: 10px;
 }
 
 .button {
@@ -195,7 +198,7 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 425px) {
   
 .wrapper {
     grid-template-columns: 100%;
@@ -208,11 +211,26 @@ h3 {
   .top-menu {
     display: none;  
     position: absolute;
-    background: #4859778b;
-    top: 4em;
-    right: 0;
-    flex-direction: column;  
-  }
+    background: #0e2f66e5;
+    top: 50px;
+    right: 5px;
+    flex-direction: column;
+    z-index: 1;
+    }
+
+    header a {
+      display: flex;
+      justify-content: center;
+      padding: 1px 0 20px 15px;
+    }
+
+    footer {
+      display: inline-block;
+    }
+
+    h3 {
+      padding-top: 15px;
+    }
 
   .dropdown:focus + nav {
     display: flex;
