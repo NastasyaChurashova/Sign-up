@@ -12,6 +12,9 @@ form {
     padding: 0 4px;
   }
 
+.wrapper {
+  display:grid;
+}
 
 header a {
   text-decoration: none;
@@ -20,7 +23,7 @@ header a {
   margin-top: 40px;
 }
 
- nav .top-menu ~svg {
+ nav .top-menu {
   display: inline-block;
   vertical-align: middle;
   margin-top: 40px;
@@ -96,6 +99,7 @@ input {
 .email,
 .password {
   display: flex;
+  margin-top: 10px;
   }
 
 input {
@@ -160,7 +164,6 @@ footer {
 
 footer a {
   text-decoration: none;
-  font-size: 12px;
   color: white;
   margin-right: 24px;
   margin-top: 40px;
@@ -174,6 +177,11 @@ h3 {
   margin-right: 50px;
 }
 
+.dropdown {
+  display:none;
+  align-self: center;
+}
+
 @media only screen and (max-width: 786px) {
   header {
     background: rgba(0, 0, 0, 0.4);
@@ -183,4 +191,27 @@ h3 {
   }
 }
 
+@media only screen and (max-width: 720px) {
+  
+.wrapper {
+    grid-template-columns: 100%;
+  }
+
+  .dropdown {
+    display: initial;
+  }
+
+  .top-menu {
+    display: none;  
+    position: absolute;
+    background: #4859778b;
+    top: 4em;
+    right: 0;
+    flex-direction: column;  
+  }
+
+  .dropdown:focus + nav {
+    display: flex;
+  }
+}
 
