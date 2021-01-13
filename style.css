@@ -163,6 +163,7 @@ input:active {
 footer {
   display: flex;
   align-items:center;
+  justify-content: space-between;
   max-width: 1139px;
   padding: 23px 24px;
   margin: 66px auto;
@@ -180,8 +181,7 @@ h3 {
   color: white;
   font-size: 14px;
   font-weight: 400;
-  margin-right: 50px;
-  margin-left: 534px;
+
 }
 
 .dropdown {
@@ -193,8 +193,17 @@ h3 {
   header {
     background: rgba(0, 0, 0, 0.4);
   }
+
+  footer {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    min-width: 690px;
+  }
+
   h3 {
     margin: 0px auto;
+    padding-top: 20px;
   }
 }
 
@@ -229,7 +238,8 @@ h3 {
     }
 
     h3 {
-      padding-top: 15px;
+      text-align: left;
+      margin-left:50px;
     }
 
   .dropdown:focus + nav {
