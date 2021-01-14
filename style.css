@@ -20,13 +20,11 @@ header a {
   text-decoration: none;
   color: white;
   margin-right: 24px;
-  margin-top: 40px;
 }
 
 .top-menu {
   display: inline-block;
   vertical-align: middle;
-  margin-top: 40px;
 }
 
 main {
@@ -205,14 +203,25 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 425px) {
-  
-  .wrapper {
+@media only screen and (max-width: 745px){
+  footer {
+    min-width: 500px;
+  }
+
+  h3 {
+    display:flex;
+    align-content: flex-end; 
+  }
+}
+
+@media only screen and (max-width: 545px){
+   .wrapper {
     grid-template-columns: 100%;
   }
 
   .dropdown {
     display: initial;
+    padding-top: 10px;;
   }
 
   .top-menu {
@@ -225,23 +234,26 @@ h3 {
     z-index: 1;
   }
 
+  header {
+    height: 25px;
+}
+
   header a {
     display: flex;
     justify-content: center;
     padding: 1px 0 20px 15px;
   }
-
-  footer {
-    display: inline-block;
-  }
-
-  h3 {
-    text-align: left;
-    margin-left:50px;
-  }
-
   .dropdown:focus + nav {
     display: flex;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+   footer {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    min-width: 400px;
   }
 }
 
