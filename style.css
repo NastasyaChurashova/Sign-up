@@ -209,7 +209,7 @@ h3 {
   }
 
   h3 {
-    display:flex;
+    margin: 0 auto;
     align-content: flex-end; 
   }
 }
@@ -228,10 +228,12 @@ h3 {
     display: none;  
     position: absolute;
     background: #0e2f66e5;
-    top: 50px;
-    right: 5px;
+    top: 70px;
+    right: 0px;
     flex-direction: column;
+    justify-content: center;
     z-index: 1;
+    padding-top: 15px;
   }
 
   header {
@@ -243,9 +245,15 @@ h3 {
     justify-content: center;
     padding: 1px 0 20px 15px;
   }
+  
   .dropdown:focus + nav {
     display: flex;
   }
+
+  .top-menu.open {
+      display: flex;
+    }
+
 }
 
 @media only screen and (max-width: 425px) {
